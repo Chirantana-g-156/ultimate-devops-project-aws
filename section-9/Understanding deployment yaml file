@@ -1,9 +1,9 @@
 EX:- 
 apiVersion: apps/v1 
-kind: Deployment  // can be:- deployment, service, ingress, webhooks (kind helps in understanding what is this yaml file about)
+kind: Deployment                                      // can be:- deployment, service, ingress, webhooks (kind helps in understanding what is this yaml file about)
 metadata:
   name: opentelemetry-demo-adservice
-  labels:  // labels to know what it is for and which project it is for in an org
+  labels:                                            // labels to know what it is for and which project it is for in an org
     
     opentelemetry.io/name: opentelemetry-demo-adservice
     app.kubernetes.io/instance: opentelemetry-demo
@@ -36,7 +36,7 @@ spec:
             
             - containerPort: 8080
               name: service
-          env:
+          env:                                                 //usually given by developer 
             - name: OTEL_SERVICE_NAME
               valueFrom:
                 fieldRef:
