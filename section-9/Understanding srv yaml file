@@ -16,7 +16,7 @@ spec:
   ports:
     - port: 8080
       name: tcp-service
-      targetPort: 8080
+      targetPort: 8080                   //target port meets the container port in the deplo yaml file (containerPort: 8080)
   selector:
     opentelemetry.io/name: opentelemetry-demo-cartservice
 
