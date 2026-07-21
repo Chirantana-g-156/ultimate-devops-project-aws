@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment                                      // can be:- deployment, service, ingress, webhooks (kind helps in understanding what is this yaml file about)
 metadata:
   name: opentelemetry-demo-adservice
-  labels:                                            // labels to know what it is for and which project it is for in an org
+  labels:                                            // labels to know what it is for and which project it is for in an organisation
     
     opentelemetry.io/name: opentelemetry-demo-adservice
     app.kubernetes.io/instance: opentelemetry-demo
