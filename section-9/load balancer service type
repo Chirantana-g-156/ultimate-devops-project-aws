@@ -1,3 +1,9 @@
+used usually when a cloud platform is attached example AWS
+on a local Kubernetes cluster (like Minikube or Kind), you'll often see:
+EXTERNAL-IP
+<pending>
+because there is no AWS CCM to create a real load balancer.
+.....................................................................................................................
 LoadBalancer
 
 Now simply change
